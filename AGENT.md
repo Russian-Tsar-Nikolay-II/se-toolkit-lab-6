@@ -1,7 +1,15 @@
 # Agent
 
-The CLI is an agent that sends a question to LLM and returns a response in JSON format.
+CLI-agent for request LLM.
 
 ## Launch
-``bash
-uv run agent.py "Your question"
+uv run agent.py "Request"
+
+## Output
+{"answer": "...", "tool_calls": []}
+
+## Variables (.env.agent.secret)
+- LLM_API_KEY
+- LLM_API_BASE  
+- LLM_MODEL
+
