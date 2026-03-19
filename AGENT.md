@@ -35,8 +35,8 @@ Fallback logic
   analyzes the last tool call
   and extracts the response from the result:
   from the file (find_answer_in_content)
-  from the API (find_answer_in_api)
-  , if necessary, uses basic cached responses.
+  from the API (find_answer_in_api),
+  if necessary, uses basic cached responses.
   This is necessary for stability and passing autotests.
 
 Error handling
