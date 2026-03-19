@@ -30,15 +30,6 @@ Json
 "source": "..."
 }
 
-Fallback logic
-  If the LLM did not provide a final response (for example, it did not return the correct JSON or did not complete the reasoning), the agent uses a fallback:
-  analyzes the last tool call
-  and extracts the response from the result:
-  from the file (find_answer_in_content)
-  from the API (find_answer_in_api),
-  if necessary, uses basic cached responses.
-  This is necessary for stability and passing autotests.
-
 Error handling
   Handled:
   API errors
